@@ -1,0 +1,8 @@
+node{
+    stage('Clone Repo') {
+    git 'https://github.com/KatBurnog/katRepo.git'
+}
+stage('Print content') {
+    sh label: '', script: 'cat README.md'
+}
+}
